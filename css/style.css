@@ -1,0 +1,309 @@
+/********** Main Roles **********/
+:root {
+  --mainColor: #ff4800;
+  --subColor: #072446;
+  --navColor: #fff;
+  --fontColor: #666;
+}
+
+*::selection {
+  color: var(--mainColor);
+  background-color: var(--subColor);
+}
+
+body {
+  padding-top: 61px;
+  color: var(--fontColor);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--mainColor);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
+/********** Main Classes **********/
+.col, .row, .navbar, .container,
+.container-fluid {
+  direction: rtl;
+}
+
+.current-price {
+  color: green;
+  font-weight: bold;
+}
+
+.last-price {
+  color: red;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.current-price::after,
+.last-price::after {
+  content: "جـ";
+}
+
+.hover {
+  transition: transform 0.6s ease;
+  -webkit-transition: transform 0.6s ease;
+  -moz-transition: transform 0.6s ease;
+  -ms-transition: transform 0.6s ease;
+  -o-transition: transform 0.6s ease;
+}
+
+.hover:hover {
+  cursor: pointer;
+  transform: scale(1.05) translateZ(20px);
+  -webkit-transform: scale(1.05) translateZ(20px);
+  -moz-transform: scale(1.05) translateZ(20px);
+  -ms-transform: scale(1.05) translateZ(20px);
+  -o-transform: scale(1.05) translateZ(20px);
+}
+
+.slideshow {
+  padding: 3px;
+  display: block;
+}
+
+/********** Navbar **********/
+.bg-body-tertiary {
+  background-color: var(--subColor) !important;
+}
+
+.navbar .container {
+  flex-direction: row-reverse;
+}
+
+.navbar .btn:hover {
+  background-color: var(--mainColor);
+}
+
+/********** Slogn Show **********/
+.testi {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.testi::before {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+  background: linear-gradient(to right, var(--mainColor), var(--subColor), var(--mainColor));
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.testi .carousel-inner {
+  z-index: 10;
+}
+
+.testi .lead {
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--navColor);
+}
+
+.testi .lead span {
+  font-size: 26px;
+  color: var(--mainColor);
+}
+
+/********** Offers **********/
+.offer .row .card {
+  padding: 3px;
+}
+
+.offer .row .card h4 {
+  margin: 15px auto;
+}
+
+.offer .row .card p {
+  font-weight: bold;
+}
+
+/********** Slideshow **********/
+.img-fluid {
+  height: 400px;
+}
+
+/********** Products **********/
+.carousel-inner-product {
+  padding: 25px 0;
+}
+
+.button-box {
+  padding-top: 50px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 70%;
+  opacity: 1;
+  font-size: 25px;
+  padding: 10px 0;
+  height: fit-content;
+  color: var(--mainColor);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background: rgba(7, 36, 70, 20%);
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background: rgba(7, 36, 70, 100%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  opacity: 1;
+  color: var(--mainColor);
+}
+
+.carousel-control-prev {
+  left: 35%;
+}
+
+.carousel-control-next {
+  right: 35%;
+}
+
+/********** Testimonials **********/
+.card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.review img {
+  height: auto;
+}
+
+.btn-primary {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--subColor);
+  border-color: var(--subColor);
+  background-color: var(--mainColor);
+}
+
+.btn-primary a {
+  width: 100%;
+  display: inline-block;
+  color: var(--subColor);
+}
+
+.btn-primary:hover a {
+  color: var(--navColor);
+}
+
+/********** Footer **********/
+.my-info {
+  background-color: rgba(7, 36, 70, 90%);
+}
+
+.my-info-box {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-info .my-info-box .slogn p {
+  font-weight: bold;
+  color: var(--navColor);
+}
+
+.my-info .my-info-box .slogn p span {
+  font-size: 20px;
+  color: var(--mainColor);
+}
+
+.my-info .my-info-box .icons h5 {
+  color: var(--mainColor);
+  margin: 10px auto;
+}
+
+.my-info .my-info-box .icons ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-info .my-info-box .icons ul li {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.copyright {
+  color: var(--navColor);
+  background-color: var(--subColor);
+}
+
+.copyright p {
+  margin: 0;
+  padding: 15px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.copyright a {
+  font-weight: bold;
+  color: var(--mainColor);
+  text-decoration: underline;
+}

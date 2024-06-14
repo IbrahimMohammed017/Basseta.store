@@ -1,0 +1,64 @@
+/* Start Local Setting */
+:root {
+  --mainColor: #ff4800;
+  --subColor: #072446;
+  --navColor: #fff;
+  --fontColor: #666;
+}
+
+/* From 992px To 1199px */
+@media (max-width: 1199px) {}
+
+/* From 768px To 991 */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin-top: 10px;
+    border-top: 2px solid var(--mainColor);
+  }
+}
+
+/* From 501px To 767px */
+@media (max-width: 767px) {
+  .testi .lead {
+    font-size: 20px;
+  }
+}
+
+/* From 400px To 500px */
+@media (max-width: 576px) {
+  .testi .lead {
+    font-size: 16px;
+  }
+
+  .pro-row>* {
+    max-width: 50%;
+  }
+
+  .review-row {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .review-img,
+  .review-info {
+    width: 100%;
+  }
+}
+
+/* From 0px To 450px */
+@media (max-width: 450px) {
+
+  .card-body h5 {
+    font-size: 3.5vw;
+    font-weight: bold;
+  }
+
+  .testi .lead {
+    font-size: 4.2vw;
+  }
+
+  .price {
+    font-size: 3vw;
+  }
+}
