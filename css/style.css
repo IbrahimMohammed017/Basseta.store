@@ -41,9 +41,9 @@ body::-webkit-scrollbar-thumb {
 
 section {
   display: flex;
+  margin: 40px auto;
   align-items: center;
   justify-content: center;
-  margin: 40px auto;
 }
 
 ul {
@@ -360,4 +360,31 @@ a {
   border-width: 2px;
   color: var(--mainColor);
   border-color: var(--mainColor);
+}
+
+/********** Filter Bar **********/
+.filter-bar .filter-nav {
+  padding: 0;
+  border-color: var(--mainColor);
+}
+
+.filter-bar .nav-link {
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.filter-bar .nav-link:hover {
+  border-color: var(--mainColor);
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: var(--navColor);
+  background-color: var(--mainColor);
+}
+
+/********** Products Card **********/
+.products-cards .current-price,
+.products-cards .last-price {
+  font-weight: normal;
 }

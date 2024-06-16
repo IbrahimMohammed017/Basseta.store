@@ -1,9 +1,8 @@
-// /********** Trigger Nice Scroll **********/
-// $(document).ready(function () {
-//   $("html").niceScroll({
-//     zindex: 1000,
-//     cursorwidth: "7.5px",
-//     cursorcolor: "#ff4800",
-//     cursorborder: "1px solid #ff6200",
-//   });
-// });
+// /********** Toggle Active Class **********/
+const buttons = document.querySelectorAll(".filter-nav .nav-link");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});
