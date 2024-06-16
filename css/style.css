@@ -104,6 +104,10 @@ a {
   flex-direction: row-reverse;
 }
 
+.navbar .btn {
+  color: var(--navColor);
+}
+
 .navbar .btn:hover {
   background-color: var(--mainColor);
 }
