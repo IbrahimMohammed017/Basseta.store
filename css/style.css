@@ -237,6 +237,10 @@ a {
   justify-content: space-evenly;
 }
 
+.review-card {
+  height: 400px;
+}
+
 .review .review-img {
   display: flex;
   align-items: center;
