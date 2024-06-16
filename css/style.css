@@ -388,3 +388,24 @@ a {
 .products-cards .last-price {
   font-weight: normal;
 }
+
+.hidden {
+  display: none;
+}
+
+.item {
+  /* opacity: 0; */
+  transition: opacity 0.5s ease-in-out;
+  /* height: 0; */
+  overflow: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+.item.shoow {
+  opacity: 1;
+  height: auto;
+  /* Adjust this as needed to allow for smooth transition */
+}

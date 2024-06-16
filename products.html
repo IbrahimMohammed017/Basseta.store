@@ -36,7 +36,7 @@
     <div class="container">
       <form class="d-flex" role="search">
         <button class="btn btn-outline-success" type="submit">إبحث</button>
-        <input class="form-control me-2" type="search" placeholder="إبحث هنا" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="إبحث هنا" aria-label="Search" id="searchInput">
       </form>
     </div>
   </section>
@@ -45,72 +45,112 @@
   <section class="filter-bar">
     <ul class="nav nav-tabs filter-nav">
       <li class="nav-item">
-        <button class="nav-link active" aria-current="page">الكل</button>
+        <button class="nav-link active" aria-current="page" data-cat=".all">
+          الكل
+        </button>
       </li>
       <li class="nav-item">
-        <button class="nav-link">إكسسوار موبايل</button>
+        <button class="nav-link" data-cat=".mobacc">
+          إكسسوار موبايل
+        </button>
       </li>
       <li class="nav-item">
-        <button class="nav-link">إلكترونيات</button>
+        <button class="nav-link" data-cat=".elec">
+          إلكترونيات
+        </button>
       </li>
       <li class="nav-item">
-        <button class="nav-link">إكسسوار سيارات</button>
+        <button class="nav-link" data-cat=".caracc">
+          إكسسوار سيارات
+        </button>
       </li>
       <li class="nav-item">
-        <button class="nav-link">لوازم منزلية</button>
+        <button class="nav-link" data-cat=".homesup">
+          لوازم منزلية
+        </button>
       </li>
     </ul>
   </section>
 
-  <!-- ********** Mobile Accessoris ********** -->
-  <section class="products-cards text-center">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col-6 col-md-2">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+  <!-- ********** Products Card Section ********** -->
+  <section class="text-center slideshow product">
+    <div class="container-fluid">
+      <div class="row gx-4 gy-4 pro-row">
+        <!-- ********** Mobile Accessoris ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all mobacc">
+          <div class="card shadow p-1 rounded-4 hover">
+            <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h5 class="card-title">Mobile</h5>
+              <p class="card-text price">
+                <span class="current-price">200</span>
+                <i class="fa-solid fa-slash-forward"></i>
+                <span class="last-price">300</span>
+              </p>
+              <p class="hidden">
+                Mobile - Phone - موبايل
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+
+        <!-- ********** Electronics ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all elec">
+          <div class="card shadow p-1 rounded-4 hover">
+            <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
+              <h5 class="card-title">Electronics</h5>
+              <p class="card-text price">
+                <span class="current-price">200</span>
+                <i class="fa-solid fa-slash-forward"></i>
+                <span class="last-price">300</span>
+              </p>
+              <p class="hidden">
+                Lamp - Speaker - أباجورة
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+
+        <!-- ********** Car Accessoris ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all caracc">
+          <div class="card shadow p-1 rounded-4 hover">
+            <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+              <h5 class="card-title">Car Acc</h5>
+              <p class="card-text price">
+                <span class="current-price">200</span>
+                <i class="fa-solid fa-slash-forward"></i>
+                <span class="last-price">300</span>
+              </p>
+              <p class="hidden">
+                Cars - Light System - سيارات
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
+
+        <!-- ********** Home Accessoris ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all homesup">
+          <div class="card shadow p-1 rounded-4 hover">
+            <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h5 class="card-title">Home Acc</h5>
+              <p class="card-text price">
+                <span class="current-price">200</span>
+                <i class="fa-solid fa-slash-forward"></i>
+                <span class="last-price">300</span>
+              </p>
+              <p class="hidden">
+                Carpenter - Board - دولاب
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ********** Electronics ********** -->
-  <!-- ********** Car Accessoris ********** -->
-  <!-- ********** Home Accessoris ********** -->
+
   <!-- ********** Footer ********** -->
   <footer class="footer text-center">
     <div class="my-info">
@@ -164,6 +204,25 @@
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- ********** Search Bar ********** -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let search = document.getElementById("searchInput");
+      search.addEventListener("keyup", () => {
+        let searchValue = search.value.trim().toUpperCase();
+        let keySearch = document.querySelectorAll(".card");
+        for (let i = 0; i < keySearch.length; i++) {
+          let div = keySearch[i];
+          if (div.textContent.trim().toUpperCase().indexOf(searchValue) == -1) {
+            div.parentElement.style.display = "none";
+          } else {
+            div.parentElement.style.display = "block";
+          }
+        }
+      });
+    });
+  </script>
 
 </body>
 
