@@ -44,6 +44,10 @@
   .review-info {
     width: 100%;
   }
+
+  .review img {
+    width: 50%;
+  }
 }
 
 /* From 0px To 450px */
