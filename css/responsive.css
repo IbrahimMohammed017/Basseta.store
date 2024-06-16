@@ -52,12 +52,6 @@
 
 /* From 0px To 450px */
 @media (max-width: 450px) {
-
-  .card-body h5 {
-    font-size: 3.5vw;
-    font-weight: bold;
-  }
-
   .testi .lead {
     font-size: 4vw;
   }

@@ -6,6 +6,10 @@
   --fontColor: #666;
 }
 
+* {
+  direction: rtl;
+}
+
 *::selection {
   color: var(--mainColor);
   background-color: var(--subColor);
@@ -104,11 +108,13 @@ a {
   flex-direction: row-reverse;
 }
 
-.navbar .btn {
+.navbar .btn,
+.navbar .btn a,
+.navbar .btn:hover,
+.navbar .btn a:hover,
+.navbar .btn:focus,
+.navbar .btn a:focus {
   color: var(--navColor);
-}
-
-.navbar .btn:hover {
   background-color: var(--mainColor);
 }
 
@@ -164,8 +170,10 @@ a {
   padding: 3px;
 }
 
-.offer .row .card h4 {
-  margin: 15px auto;
+.card-body h5 {
+  height: 48px;
+  font-weight: bold;
+  color: var(--mainColor);
 }
 
 .offer .row .card p {
@@ -325,4 +333,31 @@ a {
   font-weight: bold;
   color: var(--mainColor);
   text-decoration: underline;
+}
+
+/********** Products Page **********/
+/********** Search Bar **********/
+.search-bar form {
+  width: 50%;
+}
+
+.search-bar form button,
+.search-bar form button:hover {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: var(--navColor);
+  background-color: var(--mainColor);
+}
+
+.search-bar form input {
+  color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.search-bar form input:focus {
+  box-shadow: none;
+  border-width: 2px;
+  color: var(--mainColor);
+  border-color: var(--mainColor);
 }
