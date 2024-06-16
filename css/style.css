@@ -237,10 +237,6 @@ a {
   justify-content: space-evenly;
 }
 
-.review-card {
-  height: 400px;
-}
-
 .review .review-img {
   display: flex;
   align-items: center;
@@ -254,6 +250,10 @@ a {
 
 .review h4 {
   color: var(--mainColor);
+}
+
+.review .review-text {
+  height: 75px;
 }
 
 .btn-primary {

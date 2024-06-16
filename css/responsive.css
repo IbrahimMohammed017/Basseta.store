@@ -65,4 +65,8 @@
   .price {
     font-size: 3vw;
   }
+
+  .review .review-text {
+    height: 130px;
+  }
 }
