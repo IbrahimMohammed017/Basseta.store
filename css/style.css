@@ -169,8 +169,12 @@ a {
 }
 
 /********** Slideshow **********/
-.img-fluid {
+.img-fluid-2 {
   height: 400px;
+}
+
+.img-fluid-3 {
+  height: auto;
 }
 
 /********** Products **********/
@@ -214,11 +218,11 @@ a {
 }
 
 .carousel-control-prev {
-  left: 35%;
+  left: 33%;
 }
 
 .carousel-control-next {
-  right: 35%;
+  right: 33%;
 }
 
 /********** Testimonials **********/
@@ -256,11 +260,16 @@ a {
   background-color: rgba(7, 36, 70, 90%);
 }
 
+.my-info h5 {
+  margin: 10px auto;
+  color: var(--mainColor);
+}
+
 .my-info-box {
   display: flex;
   padding: 10px 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .my-info .my-info-box .slogn p {
@@ -268,18 +277,9 @@ a {
   color: var(--navColor);
 }
 
-.my-info .my-info-box .slogn p span {
-  font-size: 20px;
-  color: var(--mainColor);
-}
-
-.my-info .my-info-box .icons h5 {
-  color: var(--mainColor);
-  margin: 10px auto;
-}
-
 .my-info .my-info-box .icons ul {
   margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
