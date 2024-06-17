@@ -370,12 +370,6 @@ a {
 }
 
 /********** Products Page **********/
-/********** Search Bar **********/
-
-
-/********** Filter Bar **********/
-
-
 /********** Products Card **********/
 .products-cards .current-price,
 .products-cards .last-price {
@@ -400,4 +394,50 @@ a {
 .item.shoow {
   opacity: 1;
   height: auto;
+}
+
+/********** Products Pages **********/
+/********** Promotes Section **********/
+.promotes .card,
+.promotes .card .box-img {
+  padding: 3px;
+}
+
+.promotes .card .box-text {
+  text-align: start;
+}
+
+.promotes .card .box-text h2,
+.promotes .card .box-text h4 {
+  color: var(--mainColor);
+}
+
+.promotes .card .box-text .card-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--fontColor);
+}
+
+.promotes .ul {
+  justify-content: normal;
+}
+
+.promotes .card .box-text ul {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+  color: var(--fontColor);
+  list-style-type: disclosure-closed;
+}
+
+.promotes .card .box-text ul li::marker {
+  color: var(--mainColor);
+}
+
+.promotes .card .box-text .card-text b {
+  color: var(--subColor);
+}
+
+.promotes .card .box-text .card-text span {
+  font-size: 18px;
 }
