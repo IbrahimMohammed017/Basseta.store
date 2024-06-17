@@ -394,10 +394,8 @@ a {
 }
 
 .item {
-  /* opacity: 0; */
-  transition: opacity 0.5s ease-in-out;
-  /* height: 0; */
   overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -ms-transition: opacity 0.5s ease-in-out;
@@ -407,5 +405,4 @@ a {
 .item.shoow {
   opacity: 1;
   height: auto;
-  /* Adjust this as needed to allow for smooth transition */
 }

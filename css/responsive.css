@@ -15,6 +15,10 @@
     margin-top: 10px;
     border-top: 2px solid var(--mainColor);
   }
+
+  .search-bar form {
+    width: 70%;
+  }
 }
 
 /* From 501px To 767px */
@@ -48,6 +52,10 @@
   .review img {
     width: 50%;
   }
+
+  .filter-bar .nav-link {
+    font-size: 2vw;
+  }
 }
 
 /* From 0px To 450px */
@@ -62,5 +70,9 @@
 
   .review .review-text {
     height: 130px;
+  }
+
+  .search-bar form {
+    width: 90%;
   }
 }
