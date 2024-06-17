@@ -100,22 +100,56 @@ a {
 }
 
 /********** Navbar **********/
-.bg-body-tertiary {
+.navbar {
   background-color: var(--subColor) !important;
 }
 
-.navbar .container {
+.d-flex,
+.navbar>.container,
+.navbar>.container-fluid {
   flex-direction: row-reverse;
 }
 
-.navbar .btn,
-.navbar .btn a,
-.navbar .btn:hover,
-.navbar .btn a:hover,
-.navbar .btn:focus,
-.navbar .btn a:focus {
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
   color: var(--navColor);
   background-color: var(--mainColor);
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: var(--navColor);
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn-primary a,
+.btn-primary a:hover,
+.btn-primary a:focus {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: var(--navColor);
+  background-color: var(--mainColor);
+}
+
+.search-bar {
+  width: 30%;
+}
+
+.search-bar input,
+.search-bar input:focus {
+  font-weight: bold;
+  color: var(--mainColor);
 }
 
 /********** Slogn Show **********/
@@ -208,12 +242,12 @@ a {
   padding: 10px 0;
   height: fit-content;
   color: var(--mainColor);
+  background: rgba(7, 36, 70, 20%);
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  background: rgba(7, 36, 70, 20%);
 }
 
 .carousel-control-next:hover,
@@ -264,7 +298,7 @@ a {
   height: 75px;
 }
 
-.btn-primary {
+.testimonials .btn-primary {
   font-size: 20px;
   font-weight: bold;
   color: var(--subColor);
@@ -272,13 +306,13 @@ a {
   background-color: var(--mainColor);
 }
 
-.btn-primary a {
+.testimonials .btn-primary a {
   width: 100%;
   display: inline-block;
   color: var(--subColor);
 }
 
-.btn-primary:hover a {
+.testimonials .btn-primary:hover a {
   color: var(--navColor);
 }
 
@@ -337,51 +371,10 @@ a {
 
 /********** Products Page **********/
 /********** Search Bar **********/
-.search-bar form {
-  width: 50%;
-}
 
-.search-bar form button,
-.search-bar form button:hover {
-  border: none;
-  outline: none;
-  font-weight: bold;
-  color: var(--navColor);
-  background-color: var(--mainColor);
-}
-
-.search-bar form input {
-  color: var(--mainColor);
-  border-color: var(--mainColor);
-}
-
-.search-bar form input:focus {
-  box-shadow: none;
-  border-width: 2px;
-  color: var(--mainColor);
-  border-color: var(--mainColor);
-}
 
 /********** Filter Bar **********/
-.filter-bar .filter-nav {
-  padding: 0;
-  border-color: var(--mainColor);
-}
 
-.filter-bar .nav-link {
-  font-weight: bold;
-  color: var(--mainColor);
-}
-
-.filter-bar .nav-link:hover {
-  border-color: var(--mainColor);
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: var(--navColor);
-  background-color: var(--mainColor);
-}
 
 /********** Products Card **********/
 .products-cards .current-price,

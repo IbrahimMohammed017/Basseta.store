@@ -12,12 +12,20 @@
 /* From 768px To 991 */
 @media (max-width: 991.98px) {
   .navbar-nav {
-    margin-top: 10px;
+    margin: 0;
+    padding: 5px 0;
+    flex-direction: row;
     border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
   }
 
-  .search-bar form {
-    width: 70%;
+  .navbar-nav.ms-5 {
+    margin: 0 !important;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -52,10 +60,6 @@
   .review img {
     width: 50%;
   }
-
-  .filter-bar .nav-link {
-    font-size: 2vw;
-  }
 }
 
 /* From 0px To 450px */
@@ -70,9 +74,5 @@
 
   .review .review-text {
     height: 130px;
-  }
-
-  .search-bar form {
-    width: 90%;
   }
 }

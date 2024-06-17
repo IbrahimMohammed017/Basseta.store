@@ -18,59 +18,62 @@
 
 <body>
   <!-- ********** Navbar ********** -->
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container">
+    <div class="container-fluid">
+
+      <!-- ********** Logo ********** -->
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="Basseta Store" width="100" height="35">
       </a>
-      <div class="d-grid gap-2 d-md-block">
-        <button class="btn btn-primary" type="button">
-          <a href="index.html">الرئيسية</a>
-        </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- ********** Filter Bar ********** -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="nav-link active" aria-current="page" data-cat=".all" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent">
+              الكل
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".mobacc" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent">
+              إكسسوار موبايل
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".elec" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent">
+              إليكترونيات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".caracc" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent">
+              إكسسوار سيارات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".home" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent">
+              لوازم منزلية
+            </button>
+          </li>
+        </ul>
+
+        <!-- ********** Search Bar ********** -->
+        <form class="d-flex search-bar" role="search">
+          <input class="form-control me-2" type="search" placeholder="إبحث هنا" aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-success" type="submit">إبحث</button>
+        </form>
       </div>
     </div>
   </nav>
-
-  <!-- ********** Search Bar ********** -->
-  <section class="search-bar">
-    <div class="container">
-      <form class="d-flex" role="search">
-        <button class="btn btn-outline-success" type="submit">إبحث</button>
-        <input class="form-control me-2" type="search" placeholder="إبحث هنا" aria-label="Search" id="searchInput">
-      </form>
-    </div>
-  </section>
-
-  <!-- ********** Filter Bar ********** -->
-  <section class="filter-bar">
-    <ul class="nav nav-tabs filter-nav">
-      <li class="nav-item">
-        <button class="nav-link active" aria-current="page" data-cat=".all">
-          الكل
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-cat=".mobacc">
-          إكسسوار موبايل
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-cat=".elec">
-          إلكترونيات
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-cat=".caracc">
-          إكسسوار سيارات
-        </button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" data-cat=".homesup">
-          لوازم منزلية
-        </button>
-      </li>
-    </ul>
-  </section>
 
   <!-- ********** Products Card Section ********** -->
   <section class="text-center slideshow product">
@@ -131,7 +134,7 @@
         </div>
 
         <!-- ********** Home Accessoris ********** -->
-        <div class="col-6 col-md-3 col-lg-2 item all homesup">
+        <div class="col-6 col-md-3 col-lg-2 item all home">
           <div class="card shadow p-1 rounded-4 hover">
             <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
             <div class="card-body">
@@ -204,25 +207,6 @@
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- ********** Search Bar ********** -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      let search = document.getElementById("searchInput");
-      search.addEventListener("keyup", () => {
-        let searchValue = search.value.trim().toUpperCase();
-        let keySearch = document.querySelectorAll(".card");
-        for (let i = 0; i < keySearch.length; i++) {
-          let div = keySearch[i];
-          if (div.textContent.trim().toUpperCase().indexOf(searchValue) == -1) {
-            div.parentElement.style.display = "none";
-          } else {
-            div.parentElement.style.display = "block";
-          }
-        }
-      });
-    });
-  </script>
 
 </body>
 
