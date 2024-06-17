@@ -1,8 +1,6 @@
 /********** Products Card Filter **********/
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(
-    ".navbar-collapse .nav-link"
-  );
+  const buttons = document.querySelectorAll(".navbar-collapse .nav-link");
   const items = document.querySelectorAll(".product .item");
 
   buttons.forEach((li) => {
@@ -69,4 +67,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+});
+
+/********** Add Collapse To Nav Item **********/
+document.addEventListener("DOMContentLoaded", () => {
+  function updateButtonAttributes() {
+    var buttons = document.querySelectorAll(".nav-link");
+    var isSmallScreen = window.innerWidth < 992;
+
+    buttons.forEach(function (button) {
+      if (isSmallScreen) {
+        button.setAttribute("data-bs-toggle", "collapse");
+        button.setAttribute("data-bs-target", "#navbarSupportedContent");
+      } else {
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-target");
+      }
+    });
+  }
+
+  // Check attributes on page load
+  updateButtonAttributes();
+
+  // Check attributes when window is resized
+  window.addEventListener("resize", updateButtonAttributes);
 });
