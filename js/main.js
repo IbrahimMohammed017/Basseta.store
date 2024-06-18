@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let search = document.getElementById("searchInput");
   search.addEventListener("keyup", () => {
     let searchValue = search.value.trim().toUpperCase();
-    let keySearch = document.querySelectorAll(".card");
+    let keySearch = document.querySelectorAll(".card-link");
     for (let i = 0; i < keySearch.length; i++) {
       let div = keySearch[i];
       if (div.textContent.trim().toUpperCase().indexOf(searchValue) == -1) {
