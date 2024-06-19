@@ -33,7 +33,7 @@
   </nav>
 
   <!-- ********** Promotes Section ********** -->
-  <section class="promotes text-center">
+  <section class="promotes text-center main-promo">
     <div class="container-fluid">
       <div class="card mb-3 rounded-4 shadow" style="max-width: 100%;">
         <div class="row g-0">
@@ -51,7 +51,7 @@
               <p class="card-text">
                 <b>السعر</b><br>
                 <small class="text-body-secondary">
-                  <span class="current-price">200</span>
+                  <span class="current-price">500</span>
                   <i class="fa-solid fa-slash-forward"></i>
                   <span class="last-price">300</span>
                 </small>
@@ -159,13 +159,105 @@
         </p>
         <div class="buy-now">
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn open-form" type="button">
+            <button class="btn open-form" type="button" data-showForm="form">
               إشترى ألان
             </button>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ********** Form ********** -->
+  <section class="form text-center" id="form">
+    <h1>تسجيل طلب شراء</h1>
+    <form class="container text-center data-form" action="https://formspree.io/f/xleyozog" method="post">
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" name="Name:" required autocomplete="off" pattern="[A-Z a-z أ-ي]+" placeholder="الإسم"
+            class="rounded-1" />
+        </div>
+        <div class="col-md-4">
+          <input type="tel" name="Phone:" required autocomplete="off" pattern="[0-9]{11}" placeholder="رقم التليفون"
+            class="rounded-1 " />
+        </div>
+        <div class="col-md-4">
+          <input type="tel" name="Phone2:" required autocomplete="off" pattern="[0-9]{11}" placeholder="رقم الواتساب"
+            class="rounded-1 " />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <select class="select" name="Governorate" required>
+            <option selected disabled value="zone0">إختر المحافظة</option>
+            <option value="zone1">الإسكندرية</option>
+            <option value="zone2">الإسماعيلية</option>
+            <option value="zone3">الأقصر</option>
+            <option value="zone3">البحر الأحمر</option>
+            <option value="zone2">البحيرة</option>
+            <option value="zone1">الجيزة</option>
+            <option value="zone2">الدقهلية</option>
+            <option value="zone3">الساحل الشمالى</option>
+            <option value="zone2">السويس</option>
+            <option value="zone2">الشرقية</option>
+            <option value="zone2">العاشر من رمضان</option>
+            <option value="zone3">العين السخنة</option>
+            <option value="zone2">الغربية</option>
+            <option value="zone3">الغردقة</option>
+            <option value="zone3">الفيوم</option>
+            <option value="zone1">القاهرة</option>
+            <option value="zone2">القليوبية</option>
+            <option value="zone2">المحلة الكبرى</option>
+            <option value="zone2">المنوفية</option>
+            <option value="zone3">المنيا</option>
+            <option value="zone3">أسوان</option>
+            <option value="zone3">أسيوط</option>
+            <option value="zone2">بنى سويف</option>
+            <option value="zone2">بورسعيد</option>
+            <option value="zone2">دمياط</option>
+            <option value="zone3">سوهاج</option>
+            <option value="zone2">طنطا</option>
+            <option value="zone3">قنا</option>
+            <option value="zone2">كفر الشيخ</option>
+            <option value="zone3">مطروح</option>
+            <option value="zone3">وادى النطرون</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <input type="text" name="Name:" required autocomplete="off" pattern="[0-9 A-Z a-z أ-ي]+"
+            placeholder="العنوان تفصيلى بالكامل" class="rounded-1" />
+        </div>
+        <div class="col-md-4">
+          <input type="number" min="1" max="10" step="1" class="quantity rounded-1" value=""
+            placeholder="الكمية المطلوبة" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <textarea name="Message:" class="rounded-1" required placeholder="ملاحظات أخرى"></textarea>
+        </div>
+        <input type="number" class="pro-price rounded-1" disabled hidden value="" />
+        <div class="col-12 col-sm-6 price-list">
+          <label class="rounded-1">السعر:</label>
+          <input type="number" class="net-price rounded-1" disabled value="" />
+          <label class="rounded-1">مصاريف الشحن:</label>
+          <input type="number" class="trans-price rounded-1" disabled value="" />
+          <label class="rounded-1">إجمالى السعر:</label>
+          <input type="number" class="total-price rounded-1" disabled value="" />
+        </div>
+      </div>
+      <input type="text" name="code" class="rounded-1" disabled hidden value="Code">
+      <button class="button rounded-1 send" type="submit">
+        إرسال الطلب
+      </button>
+      <button class="button rounded-1 cancel">
+        إلغاء الطلب
+      </button>
+      <!-- <br>
+      <button class="button" type="button" onclick="whatsapp();">
+      Send On WhatsApp
+      </button> -->
+    </form>
   </section>
 
   <!-- ********** Footer ********** -->

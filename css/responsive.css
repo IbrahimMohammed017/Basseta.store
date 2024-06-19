@@ -38,6 +38,10 @@
   .promotes .img-fluid {
     width: 60%;
   }
+
+  .form form textarea {
+    margin-bottom: 10px;
+  }
 }
 
 /* From 400px To 500px */
