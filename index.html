@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,987 +9,1035 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <title>Basseta Store</title>
 </head>
 
 <body>
 
   <!-- ********** Navbar ********** -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+
+      <!-- ********** Logo ********** -->
       <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="Basseta Store" width="100" height="35">
       </a>
-      <div class="d-grid gap-2 d-md-block">
-        <button class="btn" type="button">
-          <a href="products.html">المنتجات</a>
-        </button>
+
+      <!-- ********** Collapse ********** -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- ********** Filter Bar ********** -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- ********** Links ********** -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="nav-link active" aria-current="page" data-cat=".all">
+              الكل
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".watch">
+              ساعات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".airpods">
+              سماعات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".charger">
+              شواحن
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".accessoris">
+              إكسسوارات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".mobiles">
+              موبايلات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".electronics">
+              إلكترونيات
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" data-cat=".offer">
+              عروض
+            </button>
+          </li>
+        </ul>
+
+        <!-- ********** Search Bar ********** -->
+        <form class="d-flex ms-auto search-bar" role="search">
+          <input class="form-control me-2" type="search" placeholder="إبحث هنا" aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">إبحث</button>
+        </form>
       </div>
     </div>
   </nav>
 
-  <!-- ********** Slogn Show ********** -->
-  <section class="testi text-center">
+  <!-- ********** Products ********** -->
+  <section class="text-center slideshow product">
     <div class="container-fluid">
-      <div id="testimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p class="lead">
-              <span>بسيطة </span>... تسوق سهل، حياة أسهل
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="lead">
-              مع <span>بسيطة </span>كل اللى بتدور عليه هتلاقيه
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="lead">
-              إكسسوارات موبايلك؟ هنا فى <span>بسيطة </span>هتلاقيها كلها
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="lead">
-              عربيتك محتاجة تجديد؟ <span>بسيطة </span>عندها كل اللى يلزمك
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="lead">
-              <span>بسيطة </span>هتخلى بيتك أجمل واللى نفسك فيه هتلاقيه
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="lead">
-              فى <span>بسيطة </span>أسعار تناسبك، جودة تستاهلها
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ********** Offers ********** -->
-  <section class="text-center offer">
-    <div class="container">
       <div class="row gx-4 gy-4 pro-row">
-        <div class="col-md-3 col-sm-6">
-          <a href="pages/mobile/productname/mob.html">
+
+        <!-- ********** Smart Watch ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all watch">
+          <a href="pages/Smart Watch FK88/Smart Watch FK88.html" class="card-link">
             <div class="card shadow p-1 rounded-4 hover">
-              <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
+              <img src="pages/Smart Watch FK88/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
               <div class="card-body">
-                <h5 class="card-title">Product #1</h5>
+                <h5 class="card-title">ساعة FK88</h5>
                 <p class="card-text price">
-                  <span class="current-price">200</span>
+                  <span class="current-price">725</span>
                   <i class="fa-solid fa-slash-forward"></i>
-                  <span class="last-price">300</span>
+                  <span class="last-price">800</span>
+                </p>
+                <p class="hidden">
+                  Smart Watch - ساعات ذكية
                 </p>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="pages/mobile/productname/mob.html">
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch">
+          <a href="pages/Smart Watch FK88 Pro/Smart Watch FK88 Pro.html" class="card-link">
             <div class="card shadow p-1 rounded-4 hover">
-              <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
+              <img src="pages/Smart Watch FK88 Pro/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
               <div class="card-body">
-                <h5 class="card-title">Product #2</h5>
+                <h5 class="card-title">ساعة FK88 Pro</h5>
                 <p class="card-text price">
-                  <span class="current-price">200</span>
+                  <span class="current-price">825</span>
                   <i class="fa-solid fa-slash-forward"></i>
-                  <span class="last-price">300</span>
+                  <span class="last-price">900</span>
+                </p>
+                <p class="hidden">
+                  Smart Watch - ساعات ذكية
                 </p>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="pages/mobile/productname/mob.html">
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch">
+          <a href="pages/Smart Watch FT80 Black/Smart Watch FT80 Black.html" class="card-link">
             <div class="card shadow p-1 rounded-4 hover">
-              <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
+              <img src="pages/Smart Watch FT80 Black/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
               <div class="card-body">
-                <h5 class="card-title">Product #3</h5>
+                <h5 class="card-title">ساعة FT80</h5>
                 <p class="card-text price">
-                  <span class="current-price">200</span>
+                  <span class="current-price">415</span>
                   <i class="fa-solid fa-slash-forward"></i>
-                  <span class="last-price">300</span>
+                  <span class="last-price">490</span>
+                </p>
+                <p class="hidden">
+                  Smart Watch - ساعات ذكية
                 </p>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="pages/mobile/productname/mob.html">
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch">
+          <a href="pages/Smart Watch X8 Ultra/Smart Watch X8 Ultra.html" class="card-link">
             <div class="card shadow p-1 rounded-4 hover">
-              <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
+              <img src="pages/Smart Watch X8 Ultra/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
               <div class="card-body">
-                <h5 class="card-title">Product #4</h5>
+                <h5 class="card-title">ساعة X8 Ultra</h5>
                 <p class="card-text price">
-                  <span class="current-price">200</span>
+                  <span class="current-price">955</span>
                   <i class="fa-solid fa-slash-forward"></i>
-                  <span class="last-price">300</span>
+                  <span class="last-price">1,030</span>
+                </p>
+                <p class="hidden">
+                  Smart Watch - ساعات ذكية
                 </p>
               </div>
             </div>
           </a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ********** Slideshow #1 ********** -->
-  <section class="text-center slideshow box-shadow">
-    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/main-banner.png" class="d-block w-100" alt="test" width="100%">
+        <div class="col-6 col-md-3 col-lg-2 item all watch">
+          <a href="pages/Smart Watch XBO SERIES 9/Smart Watch XBO SERIES 9.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Smart Watch XBO SERIES 9/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">ساعة XBO</h5>
+                <p class="card-text price">
+                  <span class="current-price">755</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">830</span>
+                </p>
+                <p class="hidden">
+                  Smart Watch - ساعات ذكية
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="carousel-item">
-          <img src="images/mobile-accessories.png" class="d-block w-100" alt="test" width="100%">
-        </div>
-        <div class="carousel-item">
-          <img src="images/power-bank.png" class="d-block w-100" alt="test" width="100%">
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ********** Products #1 ********** -->
-  <section class="text-center slideshow product">
-    <div id="product-slide1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-inner carousel-inner-product">
-        <div class="carousel-item active">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
+        <div class="col-6 col-md-3 col-lg-2 item all watch">
+          <a href="pages/VIDVIE SW1608/VIDVIE SW1608.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/VIDVIE SW1608/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">ساعة VIDVIE</h5>
+                <p class="card-text price">
+                  <span class="current-price">975</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">1,050</span>
+                </p>
+                <p class="hidden">
+                  Smart Watch - ساعات ذكية
+                </p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="button-box">
-        <button class="carousel-control-prev" type="button" data-bs-target="#product-slide1" data-bs-slide="prev">
-          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#product-slide1" data-bs-slide="next">
-          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- ********** Slideshow #2 ********** -->
-  <section class="text-center slideshow box-shadow">
-    <img src="images/car-accessories.jpg" class="img-fluid-2" alt="test" width="100%">
-  </section>
+        <!-- ********** Airpods ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Airpods Pro Semi Orignal/Airpods Pro Semi Orignal.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Airpods JR-T03S/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز JR-T03S</h5>
+                <p class="card-text price">
+                  <span class="current-price">375</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">450</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-  <!-- ********** Products #2 ********** -->
-  <section class="text-center slideshow product">
-    <div id="product-slide2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-inner carousel-inner-product">
-        <div class="carousel-item active">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Airpods Pro 2 Semi Orignal/Airpods Pro 2 Semi Orignal.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Airpods Pro 2 Semi Orignal/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز برو2</h5>
+                <p class="card-text price">
+                  <span class="current-price">470</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">520</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="button-box">
-        <button class="carousel-control-prev" type="button" data-bs-target="#product-slide2" data-bs-slide="prev">
-          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#product-slide2" data-bs-slide="next">
-          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- ********** Slideshow #3 ********** -->
-  <section class="text-center slideshow box-shadow">
-    <img src="images/home.jpg" class="img-fluid-3" alt="test" width="100%">
-  </section>
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Airpods Pro Semi Orignal/Airpods Pro Semi Orignal.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Airpods Pro Semi Orignal/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز برو</h5>
+                <p class="card-text price">
+                  <span class="current-price">460</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">510</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-  <!-- ********** Products #3 ********** -->
-  <section class="text-center slideshow product">
-    <div id="product-slide3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-inner carousel-inner-product">
-        <div class="carousel-item active">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Celebrat Magnetic Wireless Headset/Celebrat Magnetic Wireless Headset.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Celebrat Magnetic Wireless Headset/1.png" class="card-img-top rounded-4" alt="Image"
+                width="100%">
+              <div class="card-body">
+                <h5 class="card-title">سماعة بلوتوث</h5>
+                <p class="card-text price">
+                  <span class="current-price">465</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">540</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row gx-4 gy-4 pro-row">
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="pages/mobile/productname/mob.html">
-                  <div class="card shadow p-1 rounded-4 hover">
-                    <img src="images/1.jpg" class="card-img-top rounded-4" alt="test" width="100%">
-                    <div class="card-body">
-                      <h5 class="card-title">Product #1</h5>
-                      <p class="card-text price">
-                        <span class="current-price">200</span>
-                        <i class="fa-solid fa-slash-forward"></i>
-                        <span class="last-price">300</span>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="button-box">
-        <button class="carousel-control-prev" type="button" data-bs-target="#product-slide3" data-bs-slide="prev">
-          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#product-slide3" data-bs-slide="next">
-          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- ********** Testimonials ********** -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="review">
-        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3 review-card" style="width: 100%;">
-                <div class="row g-0 review-row">
-                  <div class="col-md-4 text-center review-img">
-                    <img src="images/Male.jpg" class="rounded-start" alt="Test">
-                  </div>
-                  <div class="col-md-8 review-info">
-                    <div class="card-body">
-                      <h4 class="card-title">إسم العميل</h4>
-                      <p class="card-text review-text">
-                        بجد المعاملة هنا ممتازة جداً والمنتجات جودتها عالية والأسعار كمان مناسبة وكويسة جداً والتسليم
-                        كان فى الموعد المحدد.
-                        شكراً ليكم!
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">
-                          المنتج:
-                          <span>
-                            إسم المنتج
-                          </span>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Earldom BH76 Magnetic Wireless Headset/Earldom BH76 Magnetic Wireless Headset.html"
+            class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Earldom BH76 Magnetic Wireless Headset/1.png" class="card-img-top rounded-4" alt="Image"
+                width="100%">
+              <div class="card-body">
+                <h5 class="card-title">سماعة BH76</h5>
+                <p class="card-text price">
+                  <span class="current-price">320</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">370</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="card mb-3 review-card" style="width: 100%;">
-                <div class="row g-0">
-                  <div class="col-md-4 text-center review-img">
-                    <img src="images/Female.jpg" class="rounded-start" alt="Test" width="75%" height="250px">
-                  </div>
-                  <div class="col-md-8 review-info">
-                    <div class="card-body">
-                      <h4 class="card-title">إسم العميل</h4>
-                      <p class="card-text review-text">
-                        تجربة ممتازة! الخدمة هايلة والناس محترمة جداً والأسعار حلوة قوى والتسليم كان بالظبط فى الميعاد
-                        أكيد هاجى أشترى تانى.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">
-                          المنتج:
-                          <span>
-                            إسم المنتج
-                          </span>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card mb-3 review-card" style="width: 100%;">
-                <div class="row g-0">
-                  <div class="col-md-4 text-center review-img">
-                    <img src="images/Male.jpg" class="rounded-start" alt="Test" width="75%" height="250px">
-                  </div>
-                  <div class="col-md-8 review-info">
-                    <div class="card-body">
-                      <h4 class="card-title">إسم العميل</h4>
-                      <p class="card-text review-text">
-                        تجربة كويسة جداً بجد وفريق العمل محترف، والمنتجات تحفة وجودتها محترمة والأسعار معقولة ومناسبة
-                        والتسليم مكنش فيه أى
-                        مشاكل.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">
-                          المنتج:
-                          <span>
-                            إسم المنتج
-                          </span>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card mb-3 review-card" style="width: 100%;">
-                <div class="row g-0">
-                  <div class="col-md-4 text-center review-img">
-                    <img src="images/Female.jpg" class="rounded-start" alt="Test" width="75%" height="250px">
-                  </div>
-                  <div class="col-md-8 review-info">
-                    <div class="card-body">
-                      <h4 class="card-title">إسم العميل</h4>
-                      <p class="card-text review-text">
-                        بجد خدمة العملاء هنا ممتازة ومتعاونة جداً إستلمت المنتجات فى وقت قياسى وجودتها روعة والأسعار
-                        كمان تحفة.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">
-                          المنتج:
-                          <span>
-                            إسم المنتج
-                          </span>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card mb-3 review-card" style="width: 100%;">
-                <div class="row g-0">
-                  <div class="col-md-4 text-center review-img">
-                    <img src="images/Male.jpg" class="rounded-start" alt="Test" width="75%" height="250px">
-                  </div>
-                  <div class="col-md-8 review-info">
-                    <div class="card-body">
-                      <h4 class="card-title">إسم العميل</h4>
-                      <p class="card-text review-text">
-                        شكراً ليكم على الخدمة الرائعة المنتجات جودتها عالية الصراحة والأسعار ممتازة بالنسبة للسوق،
-                        والتسليم جه فى ميعاده ومندوب
-                        التسليم شخص محترم.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">
-                          المنتج:
-                          <span>
-                            إسم المنتج
-                          </span>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card mb-3 review-card" style="width: 100%;">
-                <div class="row g-0">
-                  <div class="col-md-4 text-center review-img">
-                    <img src="images/Female.jpg" class="rounded-start" alt="Test" width="75%" height="250px">
-                  </div>
-                  <div class="col-md-8 review-info">
-                    <div class="card-body">
-                      <h4 class="card-title">إسم العميل</h4>
-                      <p class="card-text review-text">
-                        الناس هنا فى منتهى الذوق والاحترام والتجربة معاهم كانت فوق الممتازة والأسعار معقولة جداً، حتى
-                        التسليم كان فى الوقت
-                        المحدد بدون أى تأخير.
-                      </p>
-                      <p class="card-text">
-                        <small class="text-body-secondary">
-                          المنتج:
-                          <span>
-                            إسم المنتج
-                          </span>
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
-      </div>
-      <div class="buy-now">
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn" type="button">
-            <a href="products.html">إشترى ألان</a>
-          </button>
+
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Iron Pods Gaming Majentik/Iron Pods Gaming Majentik.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Iron Pods Gaming Majentik/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز ألعاب</h5>
+                <p class="card-text price">
+                  <span class="current-price">875</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">950</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل - Gamepad - Holder -
+                  حامل - ألعاب
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/VIDVIE BT859/VIDVIE BT859.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/VIDVIE BT859/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز VIDVIE</h5>
+                <p class="card-text price">
+                  <span class="current-price">465</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">540</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/XO-BS27/XO-BS27.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/XO-BS27/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز XO-BS27</h5>
+                <p class="card-text price">
+                  <span class="current-price">365</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">440</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all airpods">
+          <a href="pages/Airpods Joyroom/Airpods Joyroom.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Airpods Joyroom/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">إيربودز Joyroom</h5>
+                <p class="card-text price">
+                  <span class="current-price">290</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">340</span>
+                </p>
+                <p class="hidden">
+                  Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون - سماعة موبايل
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ********** Power bank & Charger ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/Anker Power Port Nano-20W/Anker Power Port Nano-20W.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Anker Power Port Nano-20W/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">شاحن أنكر محمول</h5>
+                <p class="card-text price">
+                  <span class="current-price">530</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">580</span>
+                </p>
+                <p class="hidden">Charger - Cable - Powerbank - شاحن - كابل - باوربانك</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/Charge Cable 3x1/Charge Cable 3x1.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Charge Cable 3x1/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">كابل 3×1</h5>
+                <p class="card-text price">
+                  <span class="current-price">190</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">240</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/JR Car Charge Fast Charge/JR Car Charge Fast Charge.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/JR Car Charge Fast Charge/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">شاحن سيارة</h5>
+                <p class="card-text price">
+                  <span class="current-price">295</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">370</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/JR Fast Charge Data Cable/JR Fast Charge Data Cable.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/JR Fast Charge Data Cable/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">كابل شحن سريع</h5>
+                <p class="card-text price">
+                  <span class="current-price">330</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">380</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/JR-PBC07 20,000 MA/JR-PBC07 20,000 MA.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/JR-PBC07 20,000 MA/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">باوربانك 20,000</h5>
+                <p class="card-text price">
+                  <span class="current-price">1,600</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">1,675</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/JR-T013 10,000 MA/JR-T013 10,000 MA.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/JR-T013 10,000 MA/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">باوربانك 10,000</h5>
+                <p class="card-text price">
+                  <span class="current-price">745</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">820</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/LDNIO Car Charge/LDNIO Car Charge.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/LDNIO Car Charge/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">شاحن سيارة</h5>
+                <p class="card-text price">
+                  <span class="current-price">280</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">355</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all charger">
+          <a href="pages/VIDVIE PB758/VIDVIE PB758.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/VIDVIE PB758/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">باوربانك VIDVIE</h5>
+                <p class="card-text price">
+                  <span class="current-price">730</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">780</span>
+                </p>
+                <p class="hidden">
+                  Charger - Cable - Powerbank - شاحن - كابل - باوربانك
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ********** Mobile Accessoris ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all accessoris">
+          <a href="pages/Gamepad 5x1/Gamepad 5x1.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Gamepad 5x1/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">دراع ألعاب 5×1</h5>
+                <p class="card-text price">
+                  <span class="current-price">130</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">180</span>
+                </p>
+                <p class="hidden">
+                  Gamepad - Holder - حامل - ألعاب
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all accessoris">
+          <a href="pages/Microphone Jmary Tybe C/Microphone Jmary Tybe C.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Microphone Jmary Tybe C/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">ميكروفون بلوتوث</h5>
+                <p class="card-text price">
+                  <span class="current-price">220</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">270</span>
+                </p>
+                <p class="hidden">
+                  Microphone - ميركوفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all accessoris">
+          <a href="pages/Mobile Game Controller SR/Mobile Game Controller SR.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Mobile Game Controller SR/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">دراع ألعاب</h5>
+                <p class="card-text price">
+                  <span class="current-price">190</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">240</span>
+                </p>
+                <p class="hidden">
+                  Gamepad - Holder - حامل - ألعاب
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all accessoris">
+          <a href="pages/mobile holder/mobile holder.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/mobile holder/1.webp" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">حامل موبايل</h5>
+                <p class="card-text price">
+                  <span class="current-price">130</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">180</span>
+                </p>
+                <p class="hidden">
+                  Gamepad - Holder - حامل - ألعاب
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ********** Mobiles ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Mobile Itel 2160 Dual SIM/Mobile Itel 2160 Dual SIM.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Mobile Itel 2160 Dual SIM/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">Itel 2160</h5>
+                <p class="card-text price">
+                  <span class="current-price">520</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">570</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Nokia 105/Nokia 105.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Nokia 105/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">Nokia 105</h5>
+                <p class="card-text price">
+                  <span class="current-price">500</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">550</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Nokia 110 Dual SIM/Nokia 110 Dual SIM.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Nokia 110 Dual SIM/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">نوكيا 110</h5>
+                <p class="card-text price">
+                  <span class="current-price">695</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">770</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Nokia 2720/Nokia 2720.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Nokia 2720/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">نوكيا 2720</h5>
+                <p class="card-text price">
+                  <span class="current-price">1,200</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">1,275</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Nokia 2720/Nokia 5310.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Nokia 5310/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">نوكيا 5310</h5>
+                <p class="card-text price">
+                  <span class="current-price">830</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">880</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Nokia 2720/Nokia 5710.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Nokia 5710/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">نوكيا 5710</h5>
+                <p class="card-text price">
+                  <span class="current-price">1,295</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">1,370</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles">
+          <a href="pages/Samsung B315 Dual Sim/Samsung B315 Dual Sim.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Samsung B315 Dual Sim/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">سامسونغ B315</h5>
+                <p class="card-text price">
+                  <span class="current-price">655</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">730</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ********** Electronics ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all electronics">
+          <a href="pages/Atary Nintendo/Atary Nintendo.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Atary Nintendo/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">أتارى نينتيندو</h5>
+                <p class="card-text price">
+                  <span class="current-price">625</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">700</span>
+                </p>
+                <p class="hidden">
+                  أتارى - اتارى - ألعاب - فيديو جيم - Vedio Game - Atary - Play
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all electronics">
+          <a href="pages/Power Strip 5x1/Power Strip 5x1.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Power Strip 5x1/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">مشترك 5×1</h5>
+                <p class="card-text price">
+                  <span class="current-price">185</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">235</span>
+                </p>
+                <p class="hidden">
+                  مشترك - كهربائى
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all electronics">
+          <a href="pages/Radio Golon/Radio Golon.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Radio Golon/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">راديو</h5>
+                <p class="card-text price">
+                  <span class="current-price">370</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">420</span>
+                </p>
+                <p class="hidden">
+                  Radio - راديو
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all electronics">
+          <a href="pages/Radio Quran/Radio Quran.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Radio Quran/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">راديو قرآن</h5>
+                <p class="card-text price">
+                  <span class="current-price">450</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">525</span>
+                </p>
+                <p class="hidden">
+                  Radio - راديو
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- ********** Offers ********** -->
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles electronics offer">
+          <a href="pages/Nokia 105 + Magic Music Box/Nokia 105 + Magic Music Box.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Nokia 105 + Magic Music Box/1.jpg" class="card-img-top rounded-4" alt="Image"
+                width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض نوكيا 2×1</h5>
+                <p class="card-text price">
+                  <span class="current-price">645</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">720</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون - Speaker - Sound - إسبيكر - اسبيكر - سماعات - مكبر صوت
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles offer">
+          <a href="pages/Offer - Samsung B315 x 2/Offer - Samsung B315 x 2.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer - Samsung B315 x 2/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض سامسونغ</h5>
+                <p class="card-text price">
+                  <span class="current-price">1,195</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">1,270</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles offer">
+          <a href="pages/Offer 2x1 - Nokia 105 - 1/Offer 2x1 - Nokia 105 - 1.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 2x1 - Nokia 105 - 1/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض نوكيا 2×1</h5>
+                <p class="card-text price">
+                  <span class="current-price">590</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">640</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون - كشاف - Light
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch mobiles offer">
+          <a href="pages/Offer 2x1 - Nokia 105 - 2/Offer 2x1 - Nokia 105 - 2.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 2x1 - Nokia 105 - 2/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض نوكيا 2×1</h5>
+                <p class="card-text price">
+                  <span class="current-price">655</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">730</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون - Airpods - Headphone - ايربودز - إيربودز - سماعة رأس - سماعة تليفون
+                  - سماعة موبايل
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles offer">
+          <a href="pages/Offer 2x1 - Nokia 106/Offer 2x1 - Nokia 106.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 2x1 - Nokia 106/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض رمضان</h5>
+                <p class="card-text price">
+                  <span class="current-price">650</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">700</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch mobiles offer">
+          <a href="pages/Offer 2x1 - Samsung B315 - 1/Offer 2x1 - Samsung B315 - 1.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 2x1 - Samsung B315 - 1/1.png" class="card-img-top rounded-4" alt="Image"
+                width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض سامسونغ</h5>
+                <p class="card-text price">
+                  <span class="current-price">745</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">820</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch mobiles offer">
+          <a href="pages/Offer 2x1 - Samsung B315 - 2/Offer 2x1 - Samsung B315 - 2.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 2x1 - Samsung B315 - 2/1.jpg" class="card-img-top rounded-4" alt="Image"
+                width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض سامسونغ</h5>
+                <p class="card-text price">
+                  <span class="current-price">780</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">855</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch mobiles offer">
+          <a href="pages/Offer 3x1 - Nokia 105/Offer 3x1 - Nokia 105.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 3x1 - Nokia 105/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض نوكيا 105</h5>
+                <p class="card-text price">
+                  <span class="current-price">645</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">720</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch mobiles offer">
+          <a href="pages/Offer 3x1 - Nokia 106/Offer 3x1 - Nokia 106.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 3x1 - Nokia 106/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض نوكيا 106</h5>
+                <p class="card-text price">
+                  <span class="current-price">645</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">720</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all watch mobiles offer">
+          <a href="pages/Offer 3x1 - Samsung B315/Offer 3x1 - Samsung B315.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 3x1 - Samsung B315/1.jpg" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض سامسونغ</h5>
+                <p class="card-text price">
+                  <span class="current-price">730</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">780</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 item all mobiles offer">
+          <a href="pages/Offer 6x1 - Nokia 106/Offer 6x1 - Nokia 106.html" class="card-link">
+            <div class="card shadow p-1 rounded-4 hover">
+              <img src="pages/Offer 6x1 - Nokia 106/1.png" class="card-img-top rounded-4" alt="Image" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">عرض رمضان</h5>
+                <p class="card-text price">
+                  <span class="current-price">730</span>
+                  <i class="fa-solid fa-slash-forward"></i>
+                  <span class="last-price">805</span>
+                </p>
+                <p class="hidden">
+                  Mobile - Phone - موبايل - تليفون
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1043,7 +1091,7 @@
     </div>
   </footer>
 
-  <!-- ********** JS Files ********** -->
+  <!-- ********** JavaScript Files ********** -->
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>

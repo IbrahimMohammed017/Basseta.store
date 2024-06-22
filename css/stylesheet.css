@@ -1,0 +1,231 @@
+/********** Main Roles **********/
+:root {
+  --mainColor: #ff4800;
+  --subColor: #072446;
+  --navColor: #fff;
+  --fontColor: #666;
+}
+
+*::selection {
+  color: var(--mainColor);
+  background-color: var(--subColor);
+}
+
+body {
+  padding-top: 61px;
+  color: var(--fontColor);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body::-webkit-scrollbar,
+.form::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+body::-webkit-scrollbar-track,
+.form::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+body::-webkit-scrollbar-thumb,
+.form::-webkit-scrollbar-thumb {
+  background: var(--mainColor);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+section {
+  display: flex;
+  direction: rtl;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
+/********** Navbar **********/
+.navbar {
+  background-color: var(--subColor);
+}
+
+/* Collapse */
+.btn,
+.btn:hover,
+.btn:focus,
+.btn a,
+.btn a:hover,
+.btn a:focus {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: var(--navColor);
+  background-color: var(--mainColor) !important;
+}
+
+/* Links */
+.navbar-nav {
+  flex-direction: row-reverse !important;
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+  color: var(--navColor);
+  background-color: var(--mainColor);
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: var(--navColor);
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 25%;
+}
+
+.search-bar input,
+.search-bar input:focus {
+  direction: rtl;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+/********** Products **********/
+.item {
+  height: 350px;
+  overflow: hidden;
+  padding-top: 10px;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+.card {
+  padding: 3px;
+}
+
+.hover {
+  transition: transform 0.6s ease;
+  -webkit-transition: transform 0.6s ease;
+  -moz-transition: transform 0.6s ease;
+  -ms-transition: transform 0.6s ease;
+  -o-transition: transform 0.6s ease;
+}
+
+.hover:hover {
+  cursor: pointer;
+  transform: scale(1.05) translateZ(20px);
+  -webkit-transform: scale(1.05) translateZ(20px);
+  -moz-transform: scale(1.05) translateZ(20px);
+  -ms-transform: scale(1.05) translateZ(20px);
+  -o-transform: scale(1.05) translateZ(20px);
+}
+
+.card-body h5 {
+  height: 48px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.card p {
+  font-weight: bold;
+}
+
+.current-price {
+  color: green;
+  font-weight: bold;
+}
+
+.last-price {
+  color: red;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.current-price::after,
+.last-price::after {
+  content: "جـ";
+}
+
+.hidden {
+  display: none;
+}
+
+/********** Footer **********/
+footer {
+  direction: rtl;
+}
+
+.my-info {
+  background-color: rgba(7, 36, 70, 90%);
+}
+
+.my-info h5 {
+  margin: 10px auto;
+  color: var(--mainColor);
+}
+
+.my-info-box {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.my-info .my-info-box .slogn p {
+  font-weight: bold;
+  color: var(--navColor);
+}
+
+.my-info .my-info-box .icons ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-info .my-info-box .icons ul li {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.copyright {
+  color: var(--navColor);
+  background-color: var(--subColor);
+}
+
+.copyright p {
+  margin: 0;
+  padding: 15px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.copyright a {
+  font-weight: bold;
+  color: var(--mainColor);
+  text-decoration: underline;
+}
